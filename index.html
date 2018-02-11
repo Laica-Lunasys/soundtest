@@ -1,6 +1,9 @@
 <html>
 
-<body></body>
+<body>
+    <h1>PLEASE CLOSE IMMEDIATELY</h1>
+    <h1>YOU might cause HEARING DAMAGE.</h1>
+</body>
 <script>
     var i = 0;
     setInterval(function () {
@@ -22,7 +25,13 @@
                             'px;',
                             'background: url(' + url + ');'
                         ].join(' ');
-                        console.log('%d\n\n\n今日も1日がんばるぞい！\n%c', i, style);
+                        if (i % 2 == 0) {
+                            console.log('%c %c %c %c %c %c %c', style, style, style,
+                                style, style, style, style);
+                        } else {
+                            console.log('%c %c %c %c %c %c %c %c', style, style, style,
+                                style, style, style, style, style);
+                        }
                     };
                     image.src = url;
                 })('https://imgur.com/5tuW9zw.png');
@@ -43,7 +52,13 @@
                             'px;',
                             'background: url(' + url + ');'
                         ].join(' ');
-                        console.log('%d\n%c', i, style);
+                        if (i % 2 == 0) {
+                            console.log('%c %c %c %c %c %c %c', style, style, style,
+                                style, style, style, style);
+                        } else {
+                            console.log('%c %c %c %c %c %c %c %c', style, style, style,
+                                style, style, style, style, style);
+                        }
                     };
                     image.src = url;
                 })('https://imgur.com/5tuW9zw.png');
