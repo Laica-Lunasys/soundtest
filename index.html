@@ -1,0 +1,55 @@
+<html>
+
+<body></body>
+<script>
+    var i = 0;
+    setInterval(function () {
+        setInterval(function () {
+            setInterval(function () {
+                i++;
+                var audio = new Audio('./zoi.mp3');
+                audio.play();
+
+                (function (url) {
+                    var image = new Image();
+                    image.onload = function () {
+                        var style = [
+                            'font-size: 0px;',
+                            'line-height: ' + this.height + 'px;',
+                            'padding: ' + this.height * .485 + 'px ' + this.width *
+                            .5 + 'px;',
+                            'background-size: ' + this.width + 'px ' + this.height +
+                            'px;',
+                            'background: url(' + url + ');'
+                        ].join(' ');
+                        console.log('%d\n\n\n今日も1日がんばるぞい！\n%c', i, style);
+                    };
+                    image.src = url;
+                })('https://imgur.com/5tuW9zw.png');
+            }, 500);
+            setInterval(function () {
+                i++;
+                var audio = new Audio('./zoi.mp3');
+                audio.play();
+                (function (url) {
+                    var image = new Image();
+                    image.onload = function () {
+                        var style = [
+                            'font-size: 0px;',
+                            'line-height: ' + this.height + 'px;',
+                            'padding: ' + this.height * .485 + 'px ' + this.width *
+                            .5 + 'px;',
+                            'background-size: ' + this.width + 'px ' + this.height +
+                            'px;',
+                            'background: url(' + url + ');'
+                        ].join(' ');
+                        console.log('%d\n%c', i, style);
+                    };
+                    image.src = url;
+                })('https://imgur.com/5tuW9zw.png');
+            }, 300);
+        }, 1000);
+    }, 5000);
+</script>
+
+</html>
