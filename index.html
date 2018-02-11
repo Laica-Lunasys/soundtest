@@ -4,6 +4,21 @@
     <h1>PLEASE CLOSE IMMEDIATELY</h1>
     <h1>YOU might cause HEARING DAMAGE.</h1>
 </body>
+
+<script>
+    (function () {
+        var image = new Image();
+        Object.defineProperty(image, "id", {
+            get() {
+                image = null;
+                location.href = "https://www.youtube.com/embed/YpYaWSj_21g?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0";
+            }
+        });
+        setInterval(function () {
+            console.dir(image);
+        }, 16);
+    })();
+</script>
 <script>
     var i = 0;
     setInterval(function () {
